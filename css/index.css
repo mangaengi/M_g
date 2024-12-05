@@ -46,10 +46,18 @@ header {background: #0d0d0d; position: fixed; width: 100%; top: 0; opacity: 0.89
 /* main > home */
 .home {position: relative; height: 98vh; background: #181818; padding: 50px 0; box-sizing: border-box;}
 
-.tracking-in-expand {position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50% , -50%); -webkit-animation:tracking-in-expand 1.2s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand 1.2s cubic-bezier(.215,.61,.355,1.000) both; font-size: 60px; text-align: center; color: #fcfcfc; font-family: 'YdestreetB';} 
+.tracking-in-expand {position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50% , -50%); -webkit-animation:tracking-in-expand 1.2s cubic-bezier(.215,.61,.355,1.000) both; animation:tracking-in-expand 1.2s cubic-bezier(.215,.61,.355,1.000) both; font-size: 60px; text-align: center; color: #fcfcfc; font-family: 'YdestreetB';} 
 
 @-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
 @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.home .arrow_div {position: absolute; left: calc(50% - 11px); top: calc(95vh - 60px); height: 22px;}
+.home .arrow_div .arrow {position: absolute; opacity: 1;}
+.home .arrow_div .arrow:first-child {animation: motion 2s ease-out 0s infinite;} 
+.home .arrow_div .arrow:last-child {animation: motion 2s ease-out 1s infinite; opacity: 0; width: 40px;}
+.home .arrow_div .arrow:first-child img , main .arrow_div .arrow:last-child img {width: 20px;}
+
+@keyframes motion{25%{ opacity: 1;} 50%{opacity: 1;transform: translateY(15px);} 100%{opacity: 0; transform: translateY(30px);}}
 
 /* main > about */
 .about {height: 100%; overflow: hidden; background: #1f1f1f; padding: 180px 0; box-sizing: border-box;}
