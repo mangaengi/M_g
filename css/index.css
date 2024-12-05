@@ -146,7 +146,7 @@ header {background: #0d0d0d; position: fixed; width: 100%; top: 0; opacity: 0.89
 
 .contact .conttxt {float: right; width: 40%; padding: 25px 0; box-sizing: border-box; color: #fcfcfc;}
 .contact .conttxt p {margin-bottom: 15px;}
-.contact .conttxt h4 {font-size: 30px;}
+.contact .conttxt p:first-child {font-size: 30px;}
 
 /* footer */
 footer {background: #1f1f1f; padding: 15px 0; box-sizing: border-box; text-align: center; font-size: 14px; color: #ffffff86;}
